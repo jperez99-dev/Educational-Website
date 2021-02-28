@@ -1,0 +1,48 @@
+/*Global Styles*/
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  padding: 1em 2em;
+}
+
+/*Header styles*/
+header {
+  background-color: #c3dff1;
+  padding-bottom: 1em;
+}
+
+header ul {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: #4ea1d3;
+  display: block;
+  padding: 1.3em;
+  font-weight: bold;
+}
+
+header .nav-btn {
+  background-color: white;
+  margin: 1em 0em;
+}
+
+ul h1 a {
+  font-size: 1.2em;
+}
