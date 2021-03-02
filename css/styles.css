@@ -9,7 +9,9 @@ body {
   text-align: center;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -20,7 +22,6 @@ h1 {
 /*Header styles*/
 header {
   background-color: #c3dff1;
-  padding-bottom: 1em;
 }
 
 header ul {
@@ -30,12 +31,19 @@ header ul {
   list-style: none;
 }
 
-ul a {
+header a {
   text-decoration: none;
   color: #4ea1d3;
   display: block;
   padding: 1.3em;
   font-weight: bold;
+}
+.todolist,
+.quizes,
+.about {
+  color: #4ea1d3;
+  opacity: 0.9;
+  transition: 0.25s;
 }
 
 header .nav-btn {
@@ -45,4 +53,45 @@ header .nav-btn {
 
 ul h1 a {
   font-size: 1.2em;
+}
+
+/* Main Styles */
+main h2 {
+  color: #4ea1d3;
+}
+
+main div {
+  margin: 2em 0em;
+  padding: 1em;
+  background-color: #c3dff1;
+  color: #4ea1d3;
+  opacity: 0.9;
+  transition: 0.25s;
+}
+
+main img {
+  width: 100%;
+}
+
+main h3,
+main p {
+  color: #393a3b;
+}
+
+main a {
+  text-decoration: none;
+}
+
+/* psuedo class styles */
+.todolist:hover,
+.quizes:hover,
+.about:hover,
+main a:hover {
+  opacity: 1;
+  box-shadow: 0 10px 6px -6px;
+}
+
+div:hover {
+  opacity: 1;
+  box-shadow: 0 10px 6px -6px;
 }
