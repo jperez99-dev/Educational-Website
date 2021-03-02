@@ -56,11 +56,17 @@ ul h1 a {
 }
 
 /* Main Styles */
+.main-grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: 450px;
+}
+
 main h2 {
   color: #4ea1d3;
 }
 
-main div {
+main .card {
   margin: 2em 0em;
   padding: 1em;
   background-color: #c3dff1;
@@ -82,16 +88,15 @@ main a {
   text-decoration: none;
 }
 
-/* psuedo class styles */
+/*psuedo class styles */
 .todolist:hover,
 .quizes:hover,
-.about:hover,
-main a:hover {
+.about:hover {
   opacity: 1;
   box-shadow: 0 10px 6px -6px;
 }
 
-div:hover {
+.card:hover {
   opacity: 1;
   box-shadow: 0 10px 6px -6px;
 }
