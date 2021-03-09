@@ -27,6 +27,7 @@ header {
 .flex-box-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 header ul {
@@ -56,7 +57,7 @@ header .nav-btn {
   margin: 1em 0 0 0;
 }
 
-ul h1 a {
+.logo {
   font-size: 1.2em;
 }
 
@@ -119,4 +120,30 @@ footer p {
 
 /* Media Queries */
 @media (min-width: 768px) {
+  /* nav */
+  .flex-box-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 100%;
+  }
+
+  .todolist,
+  .quizes,
+  .about {
+    height: 100%;
+    width: 33%;
+  }
+
+  /* main */
+  .main-grid-container {
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 470px;
+    justify-content: space-between;
+  }
+  .card {
+    padding: 3em;
+  }
 }
