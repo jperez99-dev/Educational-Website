@@ -1,0 +1,103 @@
+/*-----------------------------------Global Styles-----------------------------*/
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.container {
+  padding: 1em 2em;
+}
+
+/*-----------------------------------Header Styles-----------------------------*/
+header {
+  background-color: #30bced;
+}
+
+header ul {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1.3em;
+  font-weight: bold;
+}
+.todolist,
+.quizes,
+.about {
+  color: rgba(223, 223, 223, 0.966);
+  opacity: 0.9;
+  transition: 0.25s;
+}
+
+header .nav-btn {
+  background-color: #2895bd;
+  margin: 1em 0 0 0;
+}
+
+.logo {
+  font-size: 1.2em;
+}
+header h1 a {
+  color: white;
+}
+
+/*-----------------------------------Psuedo Class Styles-----------------------------*/
+.todolist:hover,
+.quizes:hover,
+.about:hover {
+  opacity: 1;
+  box-shadow: 0 10px 6px -6px;
+}
+
+.quiz-card:hover,
+.todolist-card:hover {
+  opacity: 1;
+  box-shadow: 0 10px 6px -6px;
+}
+
+/*----------------------------------- Media Queries-----------------------------*/
+@media (min-width: 768px) {
+  /* nav */
+  .grid-nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .logo {
+    width: 100%;
+    grid-column-start: 2;
+  }
+
+  .quizes {
+    grid-column-start: 1;
+  }
+
+  .todolist,
+  .quizes,
+  .about {
+    height: 100%;
+    width: 80%;
+    align-content: center;
+  }
+
+  header a {
+    font-size: 1.3em;
+  }
+}
