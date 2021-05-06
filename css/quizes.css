@@ -163,10 +163,10 @@ footer p {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1240px) {
   .main-grid-container {
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 600px auto;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 400px;
     justify-content: space-evenly;
   }
 }

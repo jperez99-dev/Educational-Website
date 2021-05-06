@@ -58,6 +58,25 @@ header h1 a {
   color: white;
 }
 
+/*-----------------------------------Main Class Styles-----------------------------*/
+.main-grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.objective {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.input {
+  grid-column-start: -4;
+  grid-column-end: -2;
+}
+
+.progressbar {
+  align-self: center;
+}
 /*-----------------------------------Psuedo Class Styles-----------------------------*/
 .todolist:hover,
 .quizes:hover,
@@ -77,9 +96,10 @@ header h1 a {
   /* nav */
   .grid-nav-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+
   .logo {
     width: 100%;
     grid-column-start: 2;
@@ -99,5 +119,21 @@ header h1 a {
 
   header a {
     font-size: 1.3em;
+  }
+
+  /*----------Main Class Styles-----------*/
+  .main-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 50px;
+  }
+
+  .problem {
+    grid-column-start: -3;
+    grid-column-end: -2;
+    align-self: center;
+  }
+  .score {
+    grid-column-start: -2;
+    grid-column-end: -1;
   }
 }

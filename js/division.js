@@ -4,6 +4,11 @@ var score = 0;
 var userInput;
 var questionCount = 1;
 
+function getInputValue(){
+
+    userInput = document.getElementById("user-input").value;
+    alert(userInput);
+}
 
 // loop through each question
 for(i = 1; i < 11; i++){
