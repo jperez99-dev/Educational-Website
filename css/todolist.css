@@ -57,72 +57,24 @@ header .nav-btn {
 header h1 a {
   color: white;
 }
-
-/*-----------------------------------Main Class Styles-----------------------------*/
-.main-grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
+/*-----------------------------------Main Styles-----------------------------*/
+input {
+  padding: 2em;
 }
 
-.quizArea {
-  border: 2px solid #cbcbcb;
+button {
+  background-color: #2895bd;
+  border: none;
+  padding: 2em;
 }
 
-.quizArea h1 {
-  background-color: #01BBFF;
-  text-align: center;
-  color: #ffffff;
-}
-
-#score {
-  color: #01BBFF;
-  text-align: center;
-}
-
-.grid #question {
-  color: #01BBFF;
-}
-
-#btn0, #btn1, #btn2, #btn3 {
-  background-color: #01BBFF;
-  color: #fff;
-  border: 1px solid #1D3C6A;
-  padding: 20px 20px;
-  font-size: 15px;
-}
-
-#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
-  cursor: pointer;
-  background-color: #01BBFF;
-}
-
-#progress {
-  color: #2b2b2b;
-}
-
-/*-----------------------------------Psuedo Class Styles-----------------------------*/
-.todolist:hover,
-.quizes:hover,
-.about:hover {
-  opacity: 1;
-  box-shadow: 0 10px 6px -6px;
-}
-
-.quiz-card:hover,
-.todolist-card:hover {
-  opacity: 1;
-  box-shadow: 0 10px 6px -6px;
-}
-
-/*----------------------------------- Media Queries-----------------------------*/
 @media (min-width: 768px) {
   /* nav */
   .grid-nav-container {
     display: grid;
-    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
   }
-
   .logo {
     width: 100%;
     grid-column-start: 2;
@@ -144,9 +96,5 @@ header h1 a {
     font-size: 1.3em;
   }
 
-  #btn0, #btn1, #btn2, #btn3 {
-    padding: 40px 40px;
-    font-size: 30px;
-  }
+  /* main */
 }
-
